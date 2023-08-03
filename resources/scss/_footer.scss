@@ -1,4 +1,4 @@
-@use '../assets/scss/_vars.scss' as *;
+@use 'vars' as *;
 
 #background {
     background: no-repeat 80% 50% /500px url(../images/dc-logo-bg.png), no-repeat center / 2000px url(../images/footer-bg.jpg);
