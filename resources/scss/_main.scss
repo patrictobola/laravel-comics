@@ -1,0 +1,15 @@
+@use '../assets/scss/_vars.scss' as *;
+@use '../assets/scss/_mixins.scss' as *;
+
+
+
+.container {
+    height: 100%;
+    position: relative;
+}
+
+.jumbotron {
+    height: 400px;
+    @include flex(flex-start, center);
+    background: no-repeat url(../assets/img/jumbotron.jpg);
+}

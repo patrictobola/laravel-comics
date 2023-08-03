@@ -1,0 +1,36 @@
+@use '../assets/scss/_vars.scss' as *;
+@use '../assets/scss/_mixins.scss' as *;
+
+section {
+    background-color: $gray;
+    height: 120px;
+}
+
+ul {
+    @include flex;
+}
+
+div {
+    @include flex(flex-start, center);
+    height: 100%;
+
+}
+
+span {
+    color: $blue;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+button {
+    background-color: inherit;
+    border: 2px solid $blue;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        color: $blue;
+    }
+}

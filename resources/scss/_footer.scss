@@ -1,0 +1,29 @@
+@use '../assets/scss/_vars.scss' as *;
+
+#background {
+    background: no-repeat 80% 50% /500px url(../assets/img/dc-logo-bg.png), no-repeat center / 2000px url(../assets/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.list-container {
+    padding: 40px 0;
+    display: flex;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+}
+
+a {
+    color: #7c7c7c;
+    font-size: 0.8rem;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.list-item {
+    margin-right: 50px;
+}
