@@ -1,52 +1,52 @@
 @use 'vars' as *;
 
-nav {
+header nav {
     height: 100px;
-    background-color: white;
+    background-color: cadetblue;
 
 }
 
-#navbar {
+header #navbar {
     justify-content: space-between;
-}
-
-div {
-    height: 100%;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 100%;
 }
 
-img {
+header .links {
+    height: 100%;
+}
+header img {
     height: 80px;
 }
 
-ul {
+header ul {
     height: 100%;
     margin: 0;
+    display: flex;
 }
 
-li {
-    list-style-type: none;
+header li {
     padding: 0 10px;
     font-weight: 500;
     text-transform: uppercase;
     height: 100%;
+    display: flex;
+    align-items: center;
 
 
 }
 
-a {
+header a {
     color: black;
-    height: 98%;
+    height: 100%;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    font-weight: 500;
 
     &:hover {
         color: $blue;
         border-bottom: 2px solid $blue;
     }
-}
-
-ul {
-    display: flex;
 }
