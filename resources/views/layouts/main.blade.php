@@ -18,6 +18,7 @@
     {{-- Main  --}}
     {{-- @include('includes.main') --}}
     <main>
+        @include('includes.jumbotron')
         @yield('main-content')
     </main>
     {{-- Footer  --}}

@@ -1,11 +1,4 @@
-@use 'vars' as *;
 @use 'mixins' as *;
-
-
-.container {
-    height: 100%;
-    position: relative;
-}
 
 .jumbotron {
     height: 400px;
