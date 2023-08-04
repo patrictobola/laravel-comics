@@ -14,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $header_links = config('header_links');
-    return view('home', compact('header_links'));
+    return view('home');
 });

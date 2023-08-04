@@ -1,3 +1,5 @@
+@php $header_links = config('header_links'); @endphp
+
 <header>
     <nav>
         <div id="navbar" class="container">
