@@ -1,7 +1,15 @@
+@php $menu_links = config('central_menu'); 
+@endphp
+
 <div>
-    <div class="container">
+    <div class="container central_menu">
         <ul>
-            <li v-for="link in links"><a :href="link.url"><img :src="getImagePath(link.img)" alt="">{{ link.text }}</a></li>
+            @foreach ($menu_links as $link)
+                <li>
+                <a href="#">
+                <img src="{{ Vite::asset('resources/images/{{$link['img']}}') }}" alt="{{$link['text']}}">
+                {{ $link['text'] }}</a></li>
+            @endforeach
         </ul>
     </div>
 </div>

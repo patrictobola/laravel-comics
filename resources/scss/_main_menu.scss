@@ -1,24 +1,24 @@
 @use 'vars' as *;
 @use 'mixins' as *;
 
-div {
+.central_menu div {
     height: 150px;
     @include flex(flex-start, center);
     background-color: $blue;
 
 }
 
-ul {
+.central_menu ul {
     @include flex(space-between, center);
     width: 100%;
     padding: 0;
 }
 
-li {
+.central_menu li {
     display: flex;
 }
 
-a {
+.central_menu a {
     color: white;
     display: flex;
     line-height: 60px;
@@ -29,7 +29,7 @@ a {
     }
 }
 
-img {
+.central_menu img {
     height: 60px;
     padding-right: 10px;
 }

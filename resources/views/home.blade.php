@@ -8,4 +8,7 @@
 @section('main-content')
     {{-- Comicbook Section  --}}
     @include('includes.comicbook_section.comicbook')
+
+    {{-- Central Menu section  --}}
+    @include('includes.central_menu')
 @endsection
