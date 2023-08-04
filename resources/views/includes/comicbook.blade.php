@@ -8,7 +8,11 @@
         <div class="card-container">
         @foreach ($books as $book )
             <div class="card">
-                asd
+                <div class="image">
+                    <img :src="books.thumb" :alt="books.series">
+                </div>
+                <div class="text">Price: {{ $book['price'] }}</div>
+                <div class="text">{{ $book['series'] }}</div>
             </div>
         @endforeach
             <button>LOAD MORE</button>
