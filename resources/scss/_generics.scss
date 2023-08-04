@@ -1,28 +1,29 @@
 // Reset 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1c1c1c;
+}
   
-  .container {
-      width: 1200px;
-      margin: 0 auto;
-    }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
     
-    body {
-      font-family: 'Raleway', sans-serif;
-      background-color: #000;
-    }
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #000;
+}
     
-    a {
-      text-decoration: none;
-    }
+a {
+  text-decoration: none;
+}
     
-    li {
-      list-style-type: none;
-    }
+li {
+  list-style-type: none;
+}
     
-    ul {
-      padding: 0;
-    }
+ul {
+  padding: 0;
+}
