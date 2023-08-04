@@ -3,3 +3,9 @@
 
 {{-- Change title  --}}
 @section('title', 'Comics')
+
+{{-- Main content  --}}
+@section('main-content')
+    {{-- Comicbook Section  --}}
+    @include('includes.comicbook')
+@endsection

@@ -1,10 +1,10 @@
 @use 'vars' as *;
 
-.container {
+.container.comicbook {
     position: relative;
 }
 
-span {
+.comicbook span {
     color: white;
     font-size: 2rem;
     margin: 0;
@@ -12,31 +12,31 @@ span {
     padding: 5px 10px;
 }
 
-.tag {
+.comicbook .tag {
     position: absolute;
     top: -50px;
     left: 0px;
     transform: translate(0, -50%);
 }
 
-.card {
+.comicbook .card {
     width: calc(100% / 6 - 20px);
     padding: 10px;
 
 }
 
-.card-container {
+.comicbook .card-container {
     margin: 50px -10px 0 -10px;
     display: flex;
     flex-wrap: wrap;
 }
 
-ul {
+.comicbook ul {
     display: flex;
     flex-wrap: wrap;
 }
 
-button {
+.comicbook button {
     background-color: $blue;
     border: 0;
     border-radius: 5px;
