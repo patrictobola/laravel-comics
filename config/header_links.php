@@ -1,43 +1,43 @@
 <?php
 return [
     [
-        'section' => 'CHARACTERS',
+        'section' => 'Characters',
         'path' => '#'
     ],
     [
-        'section' => 'COMICS',
+        'section' => 'Comics',
         'path' => '#'
     ],
     [
-        'section' => 'MOVIES',
+        'section' => 'Movies',
         'path' => '#'
     ],
     [
-        'section' => 'TV',
+        'section' => 'Tv',
         'path' => '#'
     ],
     [
-        'section' => 'GAMES',
+        'section' => 'Games',
         'path' => '#'
     ],
     [
-        'section' => 'COLLECTIBLES',
+        'section' => 'Collectibles',
         'path' => '#'
     ],
     [
-        'section' => 'VIDEOS',
+        'section' => 'Videos',
         'path' => '#'
     ],
     [
-        'section' => 'FANS',
+        'section' => 'Fans',
         'path' => '#'
     ],
     [
-        'section' => 'NEWS',
+        'section' => 'News',
         'path' => '#'
     ],
     [
-        'section' => 'SHOP',
+        'section' => 'Shop',
         'path' => '#'
     ]
 ];

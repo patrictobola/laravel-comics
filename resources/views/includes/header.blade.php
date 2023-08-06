@@ -10,7 +10,7 @@
             <div class="links">
                 <ul>
                     @foreach ($header_links as $link)
-                        <li><a href="{{ $link['path']}}">{{ $link['section']}}</a></li>
+                        <li><a href="{{ $link['path']}}">{{ strtoupper($link['section'])}}</a></li>
                     @endforeach
                 </ul>
 

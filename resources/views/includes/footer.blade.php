@@ -1,3 +1,8 @@
+@php 
+$main_links = config('header_links'); 
+$dc_links = config('footer_main_links'); 
+
+@endphp
 <footer>
     <div id="background">
         <div class="container">
@@ -5,13 +10,9 @@
                 <div class="list-item">
                     <h2>DC COMICS</h2>
                     <ul>
-                        <li><a href="#">Characters</a></li>
-                        <li><a href="#">Comics</a></li>
-                        <li><a href="#">Movies</a></li>
-                        <li><a href="#">TV</a></li>
-                        <li><a href="#">Games</a></li>
-                        <li><a href="#">Videos</a></li>
-                        <li><a href="#">News</a></li>
+                        @foreach ($main_links as $link)
+                            <li><a href="{{ $link['path']}}">{{ $link['section']}}</a></li>
+                        @endforeach
                     </ul>
                     <h2>SHOP</h2>
                     <ul>
@@ -22,17 +23,9 @@
                 <div class="list-item">
                     <h2>DC</h2>
                     <ul>
-                        <li><a href="#">Terms Of Use</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Ad Choices</a></li>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Subscription</a></li>
-                        <li><a href="#">Talent Workshops</a></li>
-                        <li><a href="#">CBSC Certificates</a></li>
-                        <li><a href="#">Ratings</a></li>
-                        <li><a href="#">Shop Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        @foreach ($dc_links as $link)
+                            <li><a href="{{ $link['path']}}">{{ $link['section']}}</a></li>
+                        @endforeach
                     </ul>
                 </div>
                 <div class="list-item">
