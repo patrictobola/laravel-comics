@@ -11,4 +11,7 @@
 
     {{-- Central Menu section  --}}
     @include('includes.central_menu')
+
+    {{-- Footer section  --}}
+    @include('includes.footer')
 @endsection

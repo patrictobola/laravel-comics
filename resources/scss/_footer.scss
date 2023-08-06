@@ -5,17 +5,17 @@
     background-repeat: no-repeat;
 }
 
-.list-container {
+#background .list-container {
     padding: 40px 0;
     display: flex;
 }
 
-h2 {
+#background h2 {
     color: white;
     margin: 0;
 }
 
-a {
+#background a {
     color: #7c7c7c;
     font-size: 0.8rem;
 
@@ -24,6 +24,6 @@ a {
     }
 }
 
-.list-item {
+#background .list-item {
     margin-right: 50px;
 }

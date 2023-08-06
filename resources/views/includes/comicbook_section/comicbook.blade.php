@@ -11,8 +11,6 @@
                 <div class="image">
                     <img src="{{ $book['thumb']}}" alt="{{ $book['title']}}">
                 </div>
-                {{-- Price TODO remove  --}}
-                {{-- <div class="text">Price: {{ $book['price'] }}</div> --}}
                 <div class="text">{{ $book['series'] }}</div>
             </div>
         @endforeach
