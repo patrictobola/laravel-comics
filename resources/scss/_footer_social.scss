@@ -1,28 +1,28 @@
 @use 'vars' as *;
 @use 'mixins' as *;
 
-section {
+.footer_social {
     background-color: $gray;
     height: 120px;
 }
 
-ul {
+.footer_social ul {
     @include flex;
 }
 
-div {
+.footer_social div {
     @include flex(flex-start, center);
     height: 100%;
 
 }
 
-span {
+.footer_social span {
     color: $blue;
     margin-right: 20px;
     font-weight: 600;
 }
 
-button {
+.footer_social button {
     background-color: inherit;
     border: 2px solid $blue;
     padding: 10px 20px;
@@ -32,5 +32,19 @@ button {
 
     &:hover {
         color: $blue;
+    }
+}
+
+.footer_social .container {
+    @include flex(space-between, center);
+    height: 100%;
+    
+}
+
+.footer_social img {
+    margin-right: 10px;
+    border-radius: 50%;
+    &:hover {
+        background-color: $blue;
     }
 }

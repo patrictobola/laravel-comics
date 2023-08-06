@@ -13,5 +13,8 @@
     @include('includes.central_menu')
 
     {{-- Footer section  --}}
-    @include('includes.footer')
+    @include('includes.footer.footer')
+
+    {{-- Footer Social section  --}}
+    @include('includes.footer.footer_social')
 @endsection
