@@ -7,7 +7,7 @@
             @foreach ($menu_links as $link)
                 <li>
                 <a href="#">
-                <img src="{{ Vite::asset('resources/images/{{$link['img']}}') }}" alt="{{$link['text']}}">
+                <img src="{{ Vite::asset('resources/images/')}}{{ $link["img"]}}" alt="{{$link['text']}}">
                 {{ $link['text'] }}</a></li>
             @endforeach
         </ul>
