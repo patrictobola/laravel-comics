@@ -2,7 +2,8 @@
 @endphp
 
 <div>
-    <div class="container central_menu">
+    <div class="central_menu">
+    <div class="container">
         <ul>
             @foreach ($menu_links as $link)
                 <li>
@@ -11,5 +12,6 @@
                 {{ $link['text'] }}</a></li>
             @endforeach
         </ul>
+    </div>
     </div>
 </div>

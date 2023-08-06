@@ -1,7 +1,7 @@
 @use 'vars' as *;
 @use 'mixins' as *;
 
-.central_menu div {
+.central_menu {
     height: 150px;
     @include flex(flex-start, center);
     background-color: $blue;
