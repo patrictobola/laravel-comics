@@ -28,5 +28,5 @@ Route::get('/products/{index}', function ($index) {
     $book = $books[$index];
 
     $data = compact('book', 'prev', 'next');
-    return view('products', compact('book'));
+    return view('products', $data);
 })->name('products-info');

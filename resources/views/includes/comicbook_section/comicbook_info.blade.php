@@ -27,8 +27,8 @@
         </div>
 
         {{-- Change comicbook arrow  --}}
-        <div class="arrow-right"><a href="#">Right</a></div>
-        <div class="arrow-left"><a href="#">Left</a></div>
+        <div class="arrow-right"><a href="{{ route('products-info', $next)}}">Right</a></div>
+        <div class="arrow-left"><a href="{{ route('products-info', $prev)}}">Left</a></div>
 
     </div>
 </div>
