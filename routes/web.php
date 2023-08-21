@@ -23,7 +23,7 @@ Route::get('/products/{index}', function ($index) {
     $last_index = count($books) - 1;
 
     // Faccio una validazione per l'index 
-    if ($index < 0 || $index >= $last_index || !is_numeric($index))
+    if ($index < 0 || $index > $last_index || !is_numeric($index))
         abort(404);
 
     // Creo delle variabili per cambiare index
