@@ -15,11 +15,14 @@
 figure {
     margin: 0;
 }
-.wrapper {
+.comicbook-info .wrapper {
     display: flex;
     .product-container {
         flex-basis: 70%;
     }
+}
+.comicbook-info .adv {
+    flex-basis: 30%;
 }
 .comicbook-info .tag img {
     width: 150px;
