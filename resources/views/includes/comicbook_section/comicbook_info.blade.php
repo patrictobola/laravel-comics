@@ -26,6 +26,10 @@
             </div>
         </div>
 
+        {{-- Change comicbook arrow  --}}
+        <div class="arrow-right"><a href="#">Right</a></div>
+        <div class="arrow-left"><a href="#">Left</a></div>
+
     </div>
 </div>
         {{-- product details  --}}
