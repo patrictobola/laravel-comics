@@ -35,8 +35,8 @@ Route::get('/products/{index}', function ($index) {
     $book = $books[$index];
 
     $data = ['book' => $book];
-    if ($prev != null) $data['prev'] = $prev;
-    if ($next != null) $data['next'] = $next;
+    if ($prev !== null) $data['prev'] = $prev;
+    if ($next !== null) $data['next'] = $next;
 
 
     return view('products', $data);
