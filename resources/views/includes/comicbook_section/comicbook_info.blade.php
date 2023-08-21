@@ -1,20 +1,26 @@
 
-<div class="container comicbook">
+<div class="container comicbook-info">
         <!-- Tag  -->
         <div class="tag">
-            <span>Image</span>
+            <figure><img src="{{ $book['thumb']}}" alt="{{ $book['title']}}"></figure>
         </div>
-        <div class="card-container">
-        {{-- @foreach ($books as $book ) --}}
-            <div class="card">
-                <div class="image">
-                <a href="{{ route('products-info')}}">
-                    {{-- <img src="{{ $book['thumb']}}" alt="{{ $book['title']}}"> --}}
-                </a>
+        <div class="wrapper">
+            <div class="product-container">
+                <h1>{{ $book['title']}}</h1>
+                <div class="availability">
+                    <div class="status">
+                        <span>U.S. Price: {{$book['price']}}</span>
+                        <span>Available</span>
+                    </div>
+                    <div class="status-check">
+                        <a href="#">Check Availabilty</a>
+                    </div>
                 </div>
-                {{-- <div class="text">{{ $book['series'] }}</div> --}}
             </div>
-        {{-- @endforeach --}}
+            <div class="adv">
+                <figure><img src="{{ Vite::asset('resources/images/adv.jpg')}}" alt="ADV image che se ci clicco da ispeziona funziona ma altrimenti non va. Ps. ho provate altre immagini nel path e funzionano"></figure>
+            </div>
+        </div>
             <button>LOAD MORE</button>
         </div>
     </div>

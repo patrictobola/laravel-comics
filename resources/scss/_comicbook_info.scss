@@ -1,0 +1,29 @@
+@use 'vars' as *;
+
+.container.comicbook-info {
+    position: relative;
+    padding-top: 100px;
+}
+
+.comicbook-info .tag {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(0, -70%);
+}
+
+figure {
+    margin: 0;
+}
+.wrapper {
+    display: flex;
+    .product-container {
+        flex-basis: 70%;
+    }
+}
+.comicbook-info .tag img {
+    width: 150px;
+}
+.comicbook-info .availability {
+    display: flex;
+}
