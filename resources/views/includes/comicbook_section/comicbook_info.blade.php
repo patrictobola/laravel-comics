@@ -27,7 +27,30 @@
         </div>
         {{-- product details  --}}
         
-
+        <div class="details">
+            <div class="talent">
+                <h2>Talent</h2>
+                <div class="art">
+                    <div class="title">Art by:</div>
+                    <div>
+                    @foreach ($book['artists'] as $writer)
+                        <a href="#">{{ $writer}}@if(!$loop->last),@endif
+                    @endforeach</a>
+                         
+                    </div>
+                </div>
+                <div class="art">
+                    <div class="title">Written by:</div>
+                    <div>
+                    @foreach ($book['writers'] as $writer)
+                        <a href="#">{{ $writer}}@if(!$loop->last),@endif
+                    @endforeach</a>
+                         
+                    </div>
+                </div>
+            </div>
+            <div class="specs"></div>
+        </div>
 
 
 

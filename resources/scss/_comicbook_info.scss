@@ -30,3 +30,22 @@ figure {
 .comicbook-info .availability {
     display: flex;
 }
+// Details 
+.comicbook-info .details {
+    display: flex;
+    & > * {
+        width: 50%;
+    }
+}
+.comicbook-info .talent > * {
+    border-bottom: 1px solid #666;
+    padding: 20px 0;
+}
+// Talent 
+.comicbook-info .art {
+    display: flex;
+    
+}
+.title {
+    min-width: 30%;
+}
