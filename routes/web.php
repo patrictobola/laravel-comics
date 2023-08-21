@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/products', function () {
+Route::get('/products/{index}', function ($index) {
     $books = config('comics');
-    $book = $books[0];
+    $book = $books[$index];
     return view('products', compact('book'));
 })->name('products-info');
