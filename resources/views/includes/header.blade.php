@@ -5,7 +5,7 @@
         <div id="navbar" class="container">
 
             <div class="logo">
-                <a href=""><img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt=""></a>
+                <a href="{{ route('home')}}"><img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="DC logo"></a>
             </div>
             <div class="links">
                 <ul>
