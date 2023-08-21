@@ -1,5 +1,6 @@
 <?php
 
+use Hamcrest\Type\IsNumeric;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,12 @@ Route::get('/', function () {
 })->name('home');
 Route::get('/products/{index}', function ($index) {
     $books = config('comics');
+
+    $last_index = count($books) - 1;
+
+    // Faccio una validazione per l'index 
+    if ($index < 0 || $index >= $last_index || !is_numeric($index))
+        abort(404);
 
     // Creo delle variabili per cambiare index
 
