@@ -33,11 +33,14 @@ figure {
 // Details 
 .comicbook-info .details {
     display: flex;
+    margin: 0 -50px;
     & > * {
         width: 50%;
+        margin: 0 50px;
     }
 }
-.comicbook-info .talent > * {
+.comicbook-info .talent > *,
+.comicbook-info .specs > * {
     border-bottom: 1px solid #666;
     padding: 20px 0;
 }

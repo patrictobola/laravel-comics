@@ -49,7 +49,27 @@
                     </div>
                 </div>
             </div>
-            <div class="specs"></div>
+            <div class="specs">
+                <h2>Specs</h2>
+                <div class="art">
+                    <div class="title">Series:</div>
+                    <div>
+                    <a href="#">{{ $book['series']}}</a>                         
+                    </div>
+                </div>
+                <div class="art">
+                    <div class="title">U.S. Price:</div>
+                    <div>
+                    <span>{{ $book['price']}}</span>                         
+                    </div>
+                </div>
+                <div class="art">
+                    <div class="title">On Sale Date:</div>
+                    <div>
+                    <span>{{ $book['sale_date']}}</span>                         
+                    </div>
+                </div>
+            </div>
         </div>
 
 
