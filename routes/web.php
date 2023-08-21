@@ -28,12 +28,16 @@ Route::get('/products/{index}', function ($index) {
 
     // Creo delle variabili per cambiare index
 
-    $prev = $index - 1;
-    $next = $index + 1;
+    $prev = $index > 0 ? $index - 1 : null;
+    $next = $index == $last_index ? null : $index + 1;
 
     // Prendo il singolo fumetto
     $book = $books[$index];
 
-    $data = compact('book', 'prev', 'next');
+    $data = ['book' => $book];
+    if ($prev != null) $data['prev'] = $prev;
+    if ($next != null) $data['next'] = $next;
+
+
     return view('products', $data);
 })->name('products-info');
