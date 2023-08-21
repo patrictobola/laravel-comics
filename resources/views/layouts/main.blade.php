@@ -15,14 +15,10 @@
     {{-- Header  --}}
     @include('includes.header')
 
-    {{-- Main  --}}
-    {{-- @include('includes.main') --}}
     <main>
         @include('includes.jumbotron')
         @yield('main-content')
     </main>
-    {{-- Footer  --}}
-    {{-- @include('includes.footer') --}}
 
 
 </body>
