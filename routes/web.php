@@ -18,6 +18,15 @@ Route::get('/', function () {
 })->name('home');
 Route::get('/products/{index}', function ($index) {
     $books = config('comics');
+
+    // Creo delle variabili per cambiare index
+
+    $prev = $index - 1;
+    $next = $index + 1;
+
+    // Prendo il singolo fumetto
     $book = $books[$index];
+
+    $data = compact('book', 'prev', 'next');
     return view('products', compact('book'));
 })->name('products-info');
