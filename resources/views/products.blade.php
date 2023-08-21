@@ -7,10 +7,7 @@
 {{-- Main content  --}}
 @section('main-content')
     {{-- Comicbook Section  --}}
-    @include('includes.comicbook_section.comicbook')
-
-    {{-- Central Menu section  --}}
-    @include('includes.central_menu')
+    @include('includes.comicbook_section.comicbook_info')
 
     {{-- Footer section  --}}
     @include('includes.footer.footer')
