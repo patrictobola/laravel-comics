@@ -72,9 +72,5 @@
             </div>
         </div>
 
-
-
-
-            <button>LOAD MORE</button>
         </div>
     </div>
