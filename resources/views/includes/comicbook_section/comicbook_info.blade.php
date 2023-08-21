@@ -27,8 +27,12 @@
         </div>
 
         {{-- Change comicbook arrow  --}}
+        @isset($next)
         <div class="arrow-right"><a href="{{ route('products-info', $next)}}">Right</a></div>
+        @endisset
+        @isset($prev)
         <div class="arrow-left"><a href="{{ route('products-info', $prev)}}">Left</a></div>
+        @endisset
 
     </div>
 </div>
