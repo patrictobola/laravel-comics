@@ -16,5 +16,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [ComicController::class, 'index'])->name('home');
-Route::get('/products/{index}', function ($index) {
-})->name('products-info');
+Route::get('/products/{comic}', [ComicController::class, 'show'])->name('comicbooks.show');
