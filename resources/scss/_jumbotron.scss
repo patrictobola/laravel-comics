@@ -3,5 +3,5 @@
 .jumbotron {
     height: 400px;
     @include flex(flex-start, center);
-    background: no-repeat url(../images/jumbotron.jpg);
+    background: 0% 10% / cover no-repeat url(../images/jumbotron.jpg);
 }
