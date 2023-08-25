@@ -41,29 +41,19 @@
 {{-- product details  --}}
 <div class="bgc-details">
     <div class="container">
-        <div class="details">
+        <div class="details text-black">
             <div class="talent">
                 <h2>Talent</h2>
                 <div class="art">
                     <div class="title">Art by:</div>
                     <div>
-                        @foreach ($comic as $writer)
-                            <a href="#">{{ $writer }}@if (!$loop->last)
-                                    ,
-                                @endif
-                        @endforeach
-                        </a>
+                        <span href="#">{{ $comic->artists }}</span>
                     </div>
                 </div>
                 <div class="art">
                     <div class="title">Written by:</div>
                     <div>
-                        @foreach ($comic as $writer)
-                            <a href="#">{{ $writer }}@if (!$loop->last)
-                                    ,
-                                @endif
-                        @endforeach
-                        </a>
+                        <span href="#">{{ $comic->writers }}</span>
 
                     </div>
                 </div>
