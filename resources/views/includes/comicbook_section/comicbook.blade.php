@@ -5,16 +5,16 @@
     </div>
     <div class="card-container">
         <div class="row">
-            @foreach ($books as $book)
+            @foreach ($comics as $comic)
                 <div class="col-2 mb-2">
                     <div class="card border-0">
                         <div class="image">
-                            <a href="{{ route('comicbooks.show', $book->id) }}">
-                                <img src="{{ $book['thumb'] ? $book['thumb'] : asset('images/no_image.png') }}"
-                                    alt="{{ $book['title'] }}">
+                            <a href="{{ route('comicbooks.show', $comic->id) }}">
+                                <img src="{{ $comic['thumb'] ? $comic['thumb'] : asset('images/no_image.png') }}"
+                                    alt="{{ $comic['title'] }}">
                             </a>
                         </div>
-                        <div class="text">{{ $book['title'] }}</div>
+                        <div class="text">{{ $comic['title'] }}</div>
                     </div>
                 </div>
             @endforeach
