@@ -4,16 +4,23 @@
         <span>Current series</span>
     </div>
     <div class="card-container">
-        @foreach ($books as $book)
-            <div class="card">
-                <div class="image">
-                    <a href="{{ route('comicbooks.show', $book->id) }}">
-                        <img src="{{ $book['thumb'] }}" alt="{{ $book['title'] }}">
-                    </a>
+        <div class="row">
+            @foreach ($comics as $comic)
+                <div class="col-2 mb-2">
+                    <div class="card border-0">
+                        <div class="image">
+                            <a href="{{ route('comicbooks.show', $comic->id) }}">
+                                <img src="{{ $comic['thumb'] ? $comic['thumb'] : asset('images/no_image.png') }}"
+                                    alt="{{ $comic['title'] }}">
+                            </a>
+                        </div>
+                        <div class="text">{{ $comic['title'] }}</div>
+                    </div>
                 </div>
-                <div class="text">{{ $book['series'] }}</div>
+            @endforeach
+            <div class="text-center d-flex justify-content-center mb-5">
+                <a class="btn btn-primary" href="{{ route('comicbooks.create') }}">Upload a new comicbook</a>
             </div>
-        @endforeach
-        <button>LOAD MORE</button>
+        </div>
     </div>
 </div>

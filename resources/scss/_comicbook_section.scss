@@ -19,11 +19,6 @@
     transform: translate(0, -50%);
 }
 
-.comicbook .card {
-    width: calc(100% / 6 - 20px);
-    padding: 10px;
-
-}
 
 .comicbook .card-container {
     margin: 50px -10px 0 -10px;
@@ -34,20 +29,4 @@
 .comicbook ul {
     display: flex;
     flex-wrap: wrap;
-}
-
-.comicbook button {
-    background-color: $blue;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px 50px;
-    margin: 20px auto;
-
-
-    &:hover {
-        background-color: #359cfd;
-        cursor: pointer;
-    }
 }
