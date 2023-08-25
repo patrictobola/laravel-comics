@@ -13,20 +13,25 @@ class ComicSeeder extends Seeder
      */
     public function run(): void
     {
+        $comics = config('comics');
 
-        $new_comic = new Comic();
-
-        $new_comic['title'] = 'test';
-        $new_comic['description'] = 'test';
-        $new_comic['thumb'] = 'test';
-        $new_comic['price'] = '20.54';
-        $new_comic['series'] = 'test';
-        $new_comic['sale_date'] = '2020-10-06';
-        $new_comic['type'] = 'test';
-        $new_comic['artists'] = 'test';
-        $new_comic['writers'] = 'test';
+        foreach ($comics as $comic) {
 
 
-        $new_comic->save();
+            $new_comic = new Comic();
+
+            $new_comic['title'] = $comic['title'];
+            $new_comic['description'] = $comic['description'];
+            $new_comic['thumb'] = $comic['thumb'];
+            $new_comic['price'] = $comic['price'];
+            $new_comic['series'] = $comic['series'];
+            $new_comic['sale_date'] = $comic['sale_date'];
+            $new_comic['type'] = $comic['type'];
+            $new_comic['artists'] = implode(", ", $comic['artists']);
+            $new_comic['writers'] = implode(", ", $comic['writers']);
+
+
+            $new_comic->save();
+        }
     }
 }
