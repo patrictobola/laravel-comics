@@ -9,7 +9,7 @@
 
     {{-- Form section  --}}
     <div class="container">
-        <form>
+        <form method="POST" action="{{ route('comicbooks.store') }}">
             <div class="row">
 
                 @csrf
