@@ -2,7 +2,8 @@
     <div class="container comicbook-info">
         <!-- Tag  -->
         <div class="tag">
-            <figure><img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}"></figure>
+            <figure class="bg-white"><img src="{{ $comic['thumb'] ? $comic['thumb'] : asset('images/no_image.png') }}"
+                    alt="{{ $comic['title'] }}"></figure>
         </div>
         {{-- product description --}}
         <div class="wrapper">
