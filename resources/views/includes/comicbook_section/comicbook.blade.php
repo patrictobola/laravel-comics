@@ -10,10 +10,11 @@
                     <div class="card border-0">
                         <div class="image">
                             <a href="{{ route('comicbooks.show', $book->id) }}">
-                                <img src="{{ $book['thumb'] }}" alt="{{ $book['title'] }}">
+                                <img src="{{ $book['thumb'] ? $book['thumb'] : asset('images/no_image.png') }}"
+                                    alt="{{ $book['title'] }}">
                             </a>
                         </div>
-                        <div class="text">{{ $book['series'] }}</div>
+                        <div class="text">{{ $book['title'] }}</div>
                     </div>
                 </div>
             @endforeach
