@@ -82,4 +82,8 @@
             </div>
         </div>
     </div>
+    {{-- button  --}}
+    <div class="text-center d-flex justify-content-center pb-5">
+        <a class="btn btn-primary" href="{{ route('comicbooks.edit', $comic) }}">Change info</a>
+    </div>
 </div>
