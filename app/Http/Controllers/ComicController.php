@@ -38,7 +38,7 @@ class ComicController extends Controller
             'price' => 'required|string',
             'series' => 'nullable|string',
             'sale_date' => 'date',
-            'type' => 'in:["comic book", "graphic novel"]',
+            'type' => 'in:comic book, graphic novel',
             'artists' => 'nullable|string',
             'writers' => 'nullable|string'
         ]);
