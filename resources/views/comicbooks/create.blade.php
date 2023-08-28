@@ -13,6 +13,15 @@
             <div class="row">
 
                 @csrf
+                @if ($errors->any())
+                    <div>
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
                 <div class="form-group col-6">
                     <label for="title">Titolo fumetto</label>
                     <input type="text" class="form-control" name="title" id="title" placeholder="Inserisci il titolo"
