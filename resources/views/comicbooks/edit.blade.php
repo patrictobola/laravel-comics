@@ -10,10 +10,11 @@
     {{-- Form section  --}}
     <div class="container mt-5">
         {{-- TODO Change route  --}}
-        <form method="POST" action="{{ route('comicbooks.store') }}">
+        <form method="POST" action="{{ route('comicbooks.update', $comic) }}">
             <div class="row">
 
                 @csrf
+                @method('PUT')
                 <div class="form-group col-6">
                     <label for="title">Titolo fumetto</label>
                     <input type="text" class="form-control" name="title" id="title" placeholder="Inserisci il titolo"
@@ -63,8 +64,7 @@
                     <input type="text" class="form-control" name="writers" id="writers"
                         placeholder="es. Pinco, Pallo, Pippo, Pluto.." value="{{ $comic->writers }}">
                 </div>
-
-                <button type="submit" class="btn btn-primary my-5">Submit</button>
+                <button class="btn btn-primary my-5">Modifica</button>
             </div>
         </form>
     </div>
