@@ -44,8 +44,15 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
+        $comics = Comic::all();
+        $last_comic = count($comics) - 1;
+
+        // Tasto prev 
+        $comic->id <= 1 ? $prev = $last_comic : $prev = $comic->id - 1;
+        // Tasto next 
+        $comic->id == $last_comic ? $next = 1 : $next = $comic->id + 1;
         // dd($comic->title);
-        return view('comicbooks.show', compact('comic'));
+        return view('comicbooks.show', compact('comic', 'prev', 'next'));
     }
 
     /**
