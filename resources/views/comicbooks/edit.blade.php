@@ -32,8 +32,7 @@
                 </div>
                 <div class="form-group">
                     <label for="description">Descrivici il fumetto</label>
-                    <textarea class="form-control" id="description" name="description" rows="4"
-                        placeholder="Es. Questo fumetto parla di Boolean classe 100 in un futuro prossimo dove ogni studente viene 'promosso'. Parleremo dell'assegnazione dell'attestato di partecipazione, di quanto i nostri tutor ci hanno sopportato e della dedizione che ci hanno messo gli studenti.">{{ $comic->description }}</textarea>
+                    <textarea class="form-control" id="description" name="description" rows="4">{{ $comic->description }}</textarea>
                 </div>
                 <div class="form-group col-4">
                     <label for="series">Nome serie</label>
