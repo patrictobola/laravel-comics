@@ -4,8 +4,7 @@ forms.forEach(form => {
     
     form.addEventListener("submit", e => {
         e.preventDefault();
-        console.log('yo')
-    
+        if(confirm('Are you sure bro?')) form.submit();
     })
     
 });
