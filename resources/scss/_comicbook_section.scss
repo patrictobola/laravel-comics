@@ -30,3 +30,11 @@
     display: flex;
     flex-wrap: wrap;
 }
+.delete-btn-container {
+    position: relative;
+}
+.delete-btn {
+position: absolute;
+top: 0;
+right: 0;
+}
