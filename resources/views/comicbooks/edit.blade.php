@@ -74,3 +74,7 @@
     {{-- Footer Social section  --}}
     @include('includes.footer.footer_social')
 @endsection
+
+@section('scripts')
+
+@endsection

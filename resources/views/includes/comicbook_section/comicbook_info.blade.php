@@ -85,7 +85,7 @@
     {{-- button  --}}
     <div class="text-center d-flex justify-content-center pb-5">
         <a class="btn btn-primary" href="{{ route('comicbooks.edit', $comic) }}">Change info</a>
-        <form method="POST" action="{{ route('comicbooks.destroy', $comic) }}">
+        <form method="POST" action="{{ route('comicbooks.destroy', $comic) }}" class="form-controller">
             @method('DELETE')
             @csrf
             <button class="btn btn-danger ms-2">Delete comic</button>
