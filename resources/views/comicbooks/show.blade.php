@@ -15,3 +15,10 @@
     {{-- Footer Social section  --}}
     @include('includes.footer.footer_social')
 @endsection
+
+@section('scripts')
+    <script>
+        @vite('resources/js/delete-controller.js')
+    </script>
+
+@endsection

@@ -49,7 +49,7 @@ class ComicController extends Controller
         $new_comic->fill($data);
         $new_comic->save();
 
-        return to_route('home');
+        return to_route('comicbooks.index');
     }
 
     /**
@@ -91,7 +91,7 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        $comic->delete();
-        return to_route('home');
+        // $comic->delete();
+        return to_route('comicbooks.index');
     }
 }
